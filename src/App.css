@@ -36,7 +36,7 @@
   position: relative;
   display: flex;
   overflow: auto;
-  background-image: url("snow1.jpg");
+  background-image: url("./images/snow1.jpg");
   /*min-height: 850px;*/
   background-attachment: fixed;
   background-position: center;
@@ -138,3 +138,62 @@
                         -ms-transform: translateY(-15px);
                         -o-transform: translateY(-15px);
                         transform: translateY(-15px); } }
+
+.who {
+  margin: 0 20%;
+}
+
+.mypic {
+  margin: 0 auto;
+  height: 180px;  
+}
+
+.mypic-div {
+  display: flex;
+  margin-top: 5%;
+}
+
+#navbar {
+  transition: top 0.9s;
+  top: -150px;
+  position: fixed;
+}
+
+/* .navbar {
+  background-color: black;
+  height: 84px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  position: fixed;
+}
+
+.nav {
+  font-family: dudit;
+  padding-right: 3%;
+  margin: 17px -15px;
+  list-style: none;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.navbar ul{
+  list-style: none;
+  color: white;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.navbar li {
+  float: right;
+  display: block;
+  padding: 20px 20px;
+}
+.nav > li > a:hover {
+  color: black !important;
+}
+
+
+} */
+
