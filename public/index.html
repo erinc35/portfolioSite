@@ -40,14 +40,32 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
       window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-200px";
-          }
+      function scrollFunction() {
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+          // console.log(document.documentElement.scrollTop)
+          document.getElementById("navbar").style.top = "0";
+          $("#navbar").animate({'opacity':'1'},1500);
+          // $("#navbar").fadeOut().stop()
+          // $("#navbar").fadeIn()
+        }else {
+          document.getElementById("navbar").style.top = "-200px";             
         }
+      }
+
+
     </script>
+   <!-- <script>
+   $(document).ready(function () {
+      $("#fade").delay(10).animate({ opacity: 1 }, 900)
+    })
+
+
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+      var height = $(window).height();
+      $('#fade').css({
+        'opacity': ((height - scrollTop) / height)
+      });
+    });</script> -->
   </body>
 </html>
